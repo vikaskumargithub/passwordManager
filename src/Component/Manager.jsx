@@ -69,7 +69,8 @@ const Manager = () => {
   };
   const deletePassword = (id) => {
       console.log("delete this password",id);
-      let c = confirm("Do you really want to delete this password");
+      let c =id;
+      //  confirm("Do you really want to delete this password");
       if (c) {
         
         setpasswordArray(passwordArray.filter(item=>item.id!==id));
